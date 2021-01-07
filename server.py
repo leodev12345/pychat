@@ -9,7 +9,7 @@ port= 8080
 x.bind((h_name, port))
 print( "server done binding to host and port successfully")
 print("server is waiting for incoming connections")
-x.listen(1)
+x.listen()
 connection,address= x.accept()
 print(address, " Has connected to the server and is now online...")
 
